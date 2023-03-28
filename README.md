@@ -14,7 +14,7 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 
 ## Demo
 
-![App Screenshot](img/demo.png)
+![App Screenshot](img/demov1.png)
 
 
 ## Project Lavanderia Sapito
