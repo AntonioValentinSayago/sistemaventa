@@ -1,14 +1,14 @@
-/**
-* Template Name: NiceAdmin
-* Updated: Mar 09 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+:root {
+  --primario: #17224d;
+  --secundario: #f5FAFA;
+  --terceario: #17e9e1;
+  --cuarto: #007fff;
+
+}
 :root {
   scroll-behavior: smooth;
 }
@@ -64,7 +64,7 @@ h6 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #012970;
+  color: #17224D;
 }
 
 /*--------------------------------------------------------------
@@ -77,7 +77,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: var(--terceario);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -91,7 +91,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6776f4;
+  background: var(--primario);
   color: #fff;
 }
 
@@ -236,7 +236,7 @@ h6 {
   padding: 20px 0 15px 0;
   font-size: 18px;
   font-weight: 500;
-  color: #012970;
+  color: var(--primario);
   font-family: "Poppins", sans-serif;
 }
 
@@ -474,7 +474,7 @@ h6 {
 }
 
 .header-nav .nav-profile {
-  color: #012970;
+  color: #17224D;
 }
 
 .header-nav .nav-profile img {
@@ -683,10 +683,10 @@ h6 {
   display: flex;
   align-items: center;
   font-size: 15px;
-  font-weight: 600;
-  color: #4154f1;
+  font-weight: 900;
+  color: #17224D;
   transition: 0.3;
-  background: #f6f9ff;
+  background: rgba(23, 233, 225, 0.2);
   padding: 10px 15px;
   border-radius: 4px;
 }
@@ -707,12 +707,12 @@ h6 {
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
-  background: #f6f9ff;
+  color: #007FFF;
+  background: rgba(23, 233, 225, 0.2);
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #4154f1;
+  color: #007FFF;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {

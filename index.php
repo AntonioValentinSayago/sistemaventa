@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Dashboard - Lavanderia Sapito</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
+  <link href="https://cdn-icons-png.flaticon.com/512/394/394894.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -27,6 +27,7 @@
   <link href="vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="vendor/simple-datatables/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
@@ -39,8 +40,8 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="img/logo.png" alt="">
+      <a href="index.php" class="logo d-flex align-items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/394/394894.png" alt="">
         <span class="d-none d-lg-block">Sapito</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -102,7 +103,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="index.php">
           <i class="bi bi-grid"></i>
           <span>Panel Principal</span>
         </a>
@@ -122,14 +123,14 @@
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="gastosGenerales.html">
           <i class="bi bi-bar-chart"></i><span>Gastos Generales</span>
         </a>
       </li><!-- End Charts Nav -->
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="clientes.php">
           <i class="bi bi-person"></i>
           <span>Clientes</span>
         </a>
@@ -152,13 +153,13 @@
       <h1>Panel Principal</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html"></a></li>
+          <li class="breadcrumb-item"><a href="index.php"></a></li>
           <li class="breadcrumb-item active"></li>
         </ol>
       </nav>
       <div style="margin-left: auto;">
-        <button type="button" class="btn btn-primary"><i class="bi bi-plus me-1"></i>Cliente</button>
-        <button type="button" class="btn btn-success"><i class="bi bi-plus me-1"></i>Nota</button>
+        <button type="button" class="btn btn-primary btn-add"><i class="bi bi-plus me-1"></i>Cliente</button>
+        <button type="button" class="btn btn-primary btn-add"><i class="bi bi-plus me-1"></i>Nota</button>
       </div>
     </div><!-- End Page Title -->
 
@@ -169,18 +170,6 @@
         <!-- Left side columns -->
         <div class="col-lg-12">
           <div class="row">
-
-            <!--Buscador de Clientes-->
-            <div class="card recent-sales overflow-auto">
-              <div class="card-body">
-                <h5 class="card-title">Buscar Cliente</h5>
-                <form>
-                  <input type="text" id="search-input" placeholder="Nombre Cliente" class="form-control">
-                  <ul id="search-results"></ul>
-                </form>
-
-              </div>
-            </div>
 
             <!-- Recent Sales -->
             <div class="col-12">
@@ -221,6 +210,22 @@
                         <th scope="row"><a href="#">#2457</a></th>
                         <td>Federido Lopez</td>
                         <td>Lorem, ipsum dolor.</td>
+                        <td><a href="#" class="text-primary">25 / 03 / 2023 </a></td>
+                        <td>$25</td>
+                        <td><span class="badge bg-danger">En Bodega</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2457</a></th>
+                        <td>Valentina Lopez</td>
+                        <td>Lorem, ipsum dolor.</td>
+                        <td><a href="#" class="text-primary">25 / 03 / 2023 </a></td>
+                        <td>$25</td>
+                        <td><span class="badge bg-danger">En Bodega</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2457</a></th>
+                        <td>Marcos Eduardo</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
                         <td><a href="#" class="text-primary">25 / 03 / 2023 </a></td>
                         <td>$25</td>
                         <td><span class="badge bg-danger">En Bodega</span></td>

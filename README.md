@@ -14,28 +14,28 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 
 ## Demo
 
-![App Screenshot](https://techcrunch.com/wp-content/uploads/2020/05/GIPHYBrandGuide.jpg)
+![App Screenshot](img/demo.png)
 
 
-## API GIPHY
+## Project Lavanderia Sapito
 
-#### Get all items
-
-```http
-  GET api.giphy.com/v1/gifs/search
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | Search query term or phrase. Adding @<username> anywhere in the q parameter effectively changes the search query to be a search for a specific user’s GIFs (user has to be public and verified user by GIPHY.) |
-
-#### Get item
+#### Requerimientos PHP 8.2.4
 
 ```http
-  GET api.giphy.com/v1/gifs/search?api=valoran
+  PHP https://www.php.net/downloads.php
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| Parameter     | Type     | Description                |
+| :------------ | :------- | :------------------------- |
+| `PHP (8.2.4)` | `ZIP` | This site is dedicated to supporting PHP on Microsoft Windows. It also supports ports of PHP extensions or features as well as providing special builds for the various Windows architectures. |
+
+#### Requeremientos MySQL
+
+```http
+  MySQL https://www.mysql.com/downloads/
+```
+
+| Parameter         | Type     | Description                       |
+| :---------------- | :------- | :-------------------------------- |
+| `MySQL (8.0.32)`  | `ZIP` | **Required**. MySQL Enterprise Edition includes the most comprehensive set of advanced features, management tools and technical support for MySQL |
 
