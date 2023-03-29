@@ -2,6 +2,9 @@
 
 Aplicación construida en PHP en programación orientada a Objetos, la cual consume un servicio de Api de la plataforma "GIPHY Developers"
 
+## NOTA IMPORTANTE 
+
+El servicio sistema de venta "lavanderia sapito" se encuentra a migración a la arquitectura MVC con PHP en la reciente versión
 
 ## Caracteristicas
 
