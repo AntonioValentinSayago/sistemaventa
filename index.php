@@ -110,7 +110,7 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="inventario.php">
           <i class="bi bi-menu-button-wide"></i><span>Inventario</span>
         </a>
       </li><!-- End Components Nav -->
