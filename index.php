@@ -110,20 +110,20 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="inventario.php">
+        <a class="nav-link collapsed" href="inventario.php">
           <i class="bi bi-menu-button-wide"></i><span>Inventario</span>
         </a>
       </li><!-- End Components Nav -->
 
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Reportes</span>
         </a>
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="gastosGenerales.html">
+        <a class="nav-link collapsed" href="gastosGenerales.html">
           <i class="bi bi-bar-chart"></i><span>Gastos Generales</span>
         </a>
       </li><!-- End Charts Nav -->
@@ -178,58 +178,65 @@
                 <div class="card-body">
                   <h5 class="card-title">Registro de Notas </h5>
 
-                  <table class="table table-borderless datatable">
+                  <table class="table table-borderless datatable" id="example">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Cliente</th>
-                        <th scope="col">Descripcion</th>
+                        <th scope="col">Folio de Nota</th>
                         <th scope="col">Fecha Entrega</th>
-                        <th scope="col">Precio</th>
+                        <th scope="col">Saldo</th>
+                        <th scope="col">Deuda</th>
+                        <th scope="col">Total</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Ver</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Brandon Jacob</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                        <td><a href="#" class="text-primary">25 / 03 / 2023 </a></td>
-                        <td>$25</td>
-                        <td><span class="badge bg-success">Entregado</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Cesar Antonio</td>
-                        <td>Lorem ipsum dolor sit amet consectetur.</td>
-                        <td><a href="#" class="text-primary">25 / 03 / 2023 </a></td>
-                        <td>$25</td>
-                        <td><span class="badge bg-primary">En proceso</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Federido Lopez</td>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td><a href="#" class="text-primary">25 / 03 / 2023 </a></td>
-                        <td>$25</td>
-                        <td><span class="badge bg-danger">En Bodega</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Valentina Lopez</td>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td><a href="#" class="text-primary">25 / 03 / 2023 </a></td>
-                        <td>$25</td>
-                        <td><span class="badge bg-danger">En Bodega</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Marcos Eduardo</td>
-                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-                        <td><a href="#" class="text-primary">25 / 03 / 2023 </a></td>
-                        <td>$25</td>
-                        <td><span class="badge bg-danger">En Bodega</span></td>
-                      </tr>
+                      <?php
+                      require_once("config/db_config.php");
+                      $consulta = "SELECT * FROM NotaPedido";
+                      $stmt = mysqli_query($conexion, $consulta);
+                      if (mysqli_num_rows($stmt) > 0) {
+                        while ($fila = mysqli_fetch_array($stmt)) {
+                          ?>
+                          <tr>
+                            <th scope="row">
+                              <?php echo $fila["folioNota"]; ?>
+                            </th>
+                            <td>
+                              <?php echo $fila["fechaEntrega"]; ?>
+                            </td>
+                            <td>
+                              <?php echo $fila["dineroCuneta"]; ?>
+                            </td>
+                            <td>
+                              <?php echo $fila["dineroPendiente"]; ?>
+                            </td>
+                            <td>
+                              <?php echo $fila["totalPagar"]; ?>
+                            </td>
+                            <td>
+                              <?php if ($fila["estatus"] = "E") {
+                                ?> <span class="badge bg-success">Entregado</span>
+                              </td>
+                              <?php
+                              } else {
+                                ?> <span class="badge bg-warning">En Proceso</span></td>
+                              <?php
+                              }
+                              ?>
+                            </td>
+                            <td><span class="badge bg-success"><i class="bi bi-eye-fill"></i></span></td>
+                          </tr>
+                          <?php
+                        }
+                      } else {
+                        ?>
+                        <h5 class="alert alert-danger">No hay registros en la base de datos</h5>
+                        <?php
+                      }
+                      mysqli_close($conexion);
+                      ?>
+
                     </tbody>
                   </table>
 
@@ -259,17 +266,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <script>
-/*     document.addEventListener("keydown", function (event) {
-      console.log("Tecla presionada: " + event.keyCode);
-      if (event.keyCode == 32) { alert("Tecla presionada"); }
-    }); */
-
-    /* document.addEventListener("keyup", function(event) {
-      console.log("Tecla liberada: " + event.keyCode);
-    }); */
-
-  </script>
 
   <!-- Vendor JS Files -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

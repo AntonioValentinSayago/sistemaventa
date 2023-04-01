@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Inventario - Lavanderia Sapito</title>
+    <title>Dashboard - Lavanderia Sapito</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -103,28 +103,27 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="index.php">
+                <a class="nav-link " href="index.php">
                     <i class="bi bi-grid"></i>
                     <span>Panel Principal</span>
                 </a>
             </li><!-- End Dashboard Nav -->
 
             <li class="nav-item">
-                <a class="nav-link" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                <a class="nav-link collapsed" href="inventario.php">
                     <i class="bi bi-menu-button-wide"></i><span>Inventario</span>
                 </a>
             </li><!-- End Components Nav -->
 
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                <a class="nav-link collapsed" href="#">
                     <i class="bi bi-layout-text-window-reverse"></i><span>Reportes</span>
                 </a>
             </li><!-- End Tables Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse"
-                    href="gastosGenerales.php">
+                <a class="nav-link collapsed" href="gastosGenerales.html">
                     <i class="bi bi-bar-chart"></i><span>Gastos Generales</span>
                 </a>
             </li><!-- End Charts Nav -->
@@ -151,17 +150,13 @@
     <main id="main" class="main">
 
         <div class="pagetitle" style="display: flex;">
-            <h1>Panel Principal</h1>
+            <h1>Control de Pedido</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php"></a></li>
                     <li class="breadcrumb-item active"></li>
                 </ol>
             </nav>
-            <div style="margin-left: auto;">
-                <button type="button" class="btn btn-primary btn-add"><i class="bi bi-plus me-1"></i>Producto</button>
-                <button type="button" class="btn btn-danger"><i class="bi bi-filetype-pdf"></i> Generar Reporte</button>
-            </div>
         </div><!-- End Page Title -->
 
         <!--Inicio del Section Principal-->
@@ -177,47 +172,35 @@
                             <div class="card recent-sales overflow-auto">
 
                                 <div class="card-body">
-                                    <h5 class="card-title">Control de Inventario </h5>
+                                    <h5 class="card-title">Seguimiento Nota <span class="badge bg-success text-light">123</span></h5>
 
-                                    <table class="table table-borderless datatable">
+                                    <table class="table">
                                         <thead>
                                             <tr>
                                                 <th scope="col">#</th>
-                                                <th scope="col">Cliente</th>
-                                                <th scope="col">Descripcion</th>
-                                                <th scope="col">Cantidad en Bodega</th>
-                                                <th scope="col">Etatus</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php
-                                            require_once("config/db_config.php");
-                                            $consulta = "SELECT * FROM inventario";
-                                            $stmt = mysqli_query($conexion, $consulta);
-
-                                            if(mysqli_num_rows($stmt)>0)
-                                            {
-                                                while ($fila = mysqli_fetch_array($stmt)) 
-                                                {
-                                                ?>
-                                                <tr>
-                                                    <th scope="row"><?php echo $fila["idInventario"];?></th>
-                                                    <td><?php echo $fila["nombreProducto"];?></td>
-                                                    <td><?php echo $fila["descripcion"];?></td>
-                                                    <td><?php echo $fila["cantidadProducto"];?></td>
-                                                    <td><span class="badge bg-success">Entregado</span></td>
-                                                </tr>
-                                                <?php
-                                                }
-                                            }else
-                                            {
-                                                ?>
-                                                <h1>Error</h1>
-                                                <?php
-                                            }
-                                            mysqli_close($conexion);
-                                            ?>
-
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
                                         </tbody>
                                     </table>
 
@@ -246,6 +229,7 @@
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
+
 
     <!-- Vendor JS Files -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -228,33 +228,13 @@
                     <td>28</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
-                    <td>87848</td>
-                    <td><span class="badge bg-success">Entregado</span></td>
-                    <td>2014-12-05</td>
-                    <td>35</td>
-                  </tr>
-                  <tr>
                     <th scope="row">3</th>
                     <td>Ashleigh Langosh</td>
                     <td><span class="badge bg-success">Entregado</span></td>
                     <td class="table-active">2012-06-11</td>
                     <td>45</td>
                   </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>8484848</td>
-                    <td><span class="badge bg-success">Entregado</span></td>
-                    <td class="table-active">2012-06-11</td>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td class="table-active">8282177</td>
-                    <td><span class="badge bg-success">Entregado</span></td>
-                    <td>2011-04-19</td>
-                    <td>47</td>
-                  </tr>
+
                 </tbody>
               </table>
               <!-- End Active Table -->
