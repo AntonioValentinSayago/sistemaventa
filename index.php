@@ -225,7 +225,7 @@
                               }
                               ?>
                             </td>
-                            <td><span class="badge bg-success"><i class="bi bi-eye-fill"></i></span></td>
+                            <td><a href="verNota.php?idPedido=<?php echo $fila["idNota"] ?>"><span class="badge bg-success"><i class="bi bi-eye-fill"></i></span></a></td>
                           </tr>
                           <?php
                         }

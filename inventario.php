@@ -159,8 +159,8 @@
                 </ol>
             </nav>
             <div style="margin-left: auto;">
-                <button type="button" class="btn btn-primary btn-add"><i class="bi bi-plus me-1"></i>Producto</button>
-                <button type="button" class="btn btn-danger"><i class="bi bi-filetype-pdf"></i> Generar Reporte</button>
+                <a href="nuevoInventario.php"><button type="button" class="btn btn-primary btn-add"><i class="bi bi-plus me-1"></i>Producto</button></a>
+                <a href="pdf/inventario.php" target="_target"><button type="button" class="btn btn-danger"><i class="bi bi-filetype-pdf"></i> Generar Reporte</button></a>
             </div>
         </div><!-- End Page Title -->
 
@@ -183,7 +183,7 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">#</th>
-                                                <th scope="col">Cliente</th>
+                                                <th scope="col">Producto</th>
                                                 <th scope="col">Descripcion</th>
                                                 <th scope="col">Cantidad en Bodega</th>
                                                 <th scope="col">Etatus</th>
@@ -205,7 +205,19 @@
                                                     <td><?php echo $fila["nombreProducto"];?></td>
                                                     <td><?php echo $fila["descripcion"];?></td>
                                                     <td><?php echo $fila["cantidadProducto"];?></td>
-                                                    <td><span class="badge bg-success">Entregado</span></td>
+                                                    <td>
+                                                        <?php 
+                                                            if($fila["cantidadProducto"] >= 10)
+                                                            {
+                                                               ?><span class="badge bg-success">Disponible</span> <?php
+                                                            }
+                                                            if($fila["cantidadProducto"] <= 9)
+                                                            {
+                                                                ?><span class="badge bg-danger">Pocas Existencias</span> <?php
+                                                            }
+                                                            
+                                                        ?>                        
+                                                    </td>
                                                 </tr>
                                                 <?php
                                                 }

@@ -166,13 +166,18 @@
                 <!-- Left side columns -->
                 <div class="col-lg-12">
                     <div class="row">
-
+                    <?php
+                      require_once("config/db_config.php");
+                      $idNota = $_GET["idPedido"];
+                      /* $consulta = "SELECT * FROM NotaPedido";
+                      $stmt = mysqli_query($conexion, $consulta); */
+                      ?>
                         <!-- Recent Sales -->
                         <div class="col-12">
                             <div class="card recent-sales overflow-auto">
 
                                 <div class="card-body">
-                                    <h5 class="card-title">Seguimiento Nota <span class="badge bg-success text-light">123</span></h5>
+                                    <h5 class="card-title">Seguimiento Nota <span class="badge bg-success text-light"><?php echo $idNota ?></span></h5>
 
                                     <table class="table">
                                         <thead>
