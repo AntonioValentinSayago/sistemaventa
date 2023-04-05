@@ -9,12 +9,12 @@ class UsuarioController {
         $conexion = new mysqli("localhost", "root", "123456789", "lavanderia_sapito");
 
         // Consulta para obtener los usuarios
-        $consulta = "SELECT * FROM clientes";
+        $consulta = "SELECT * FROM notaPedido";
         $resultado = $conexion->query($consulta);
 
         // Recorrer los resultados y crear objetos Usuario
         while ($fila = $resultado->fetch_assoc()) {
-            $usuario = new Usuario($fila['idCliente'], $fila['nombreCompleto'], $fila['direccion']);
+            $usuario = new Usuario($fila['folioNota'], $fila['fechaEntrega'], $fila['dineroCuneta'], $fila['dineroPendiente'],$fila['totalPagar']);
             $usuarios[] = $usuario;
         }
 
