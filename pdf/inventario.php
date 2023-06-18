@@ -33,7 +33,10 @@ $html .= '<h1>Reporte de datos</h1>';
     $html .= '<table>';
     $html .= '<thead>
                 <tr>
+<<<<<<< HEAD
                         <th scope="col">Código</th>
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
                         <th scope="col">Producto</th>
                         <th scope="col">Descripcion</th>
                         <th scope="col">Cantidad en Bodega</th>
@@ -46,7 +49,10 @@ $html .= '<h1>Reporte de datos</h1>';
                 while ($fila = mysqli_fetch_array($stmt))
                 {
                     $html .= '<tr>';
+<<<<<<< HEAD
                     $html .= '<td>'.$fila["codigoIn"].'</td>';
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
                     $html .= '<td>'.$fila["nombreProducto"].'</td>';
                     $html .= '<td>'.$fila["descripcion"].'</td>';
                     $html .= '<td>'.$fila["cantidadProducto"].'</td>';

@@ -32,6 +32,7 @@
     <!-- Template Main CSS File -->
     <link href="css/style.css" rel="stylesheet">
 
+<<<<<<< HEAD
     <!-- JavaScript -->
 <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
@@ -45,6 +46,8 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
 
 
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
 </head>
 
 <body>
@@ -151,6 +154,7 @@
             </li><!-- End Profile Page Nav -->
 
             <li class="nav-item">
+<<<<<<< HEAD
         <a class="nav-link collapsed" href="clientes.php">
         <i class="bi bi-person-add"></i>
           <span>Empleados</span>
@@ -158,6 +162,8 @@
       </li><!-- End Profile Page Nav -->
 
             <li class="nav-item">
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
                 <a class="nav-link collapsed" href="pages-faq.html">
                     <i class="bi bi-question-circle"></i>
                     <span>Manual de Usuario</span>
@@ -203,12 +209,19 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">#</th>
+<<<<<<< HEAD
                                                 <th scope="col">Código</th>
                                                 <th scope="col">Producto</th>
                                                 <th scope="col">Descripcion</th>
                                                 <th scope="col">Existencias</th>
                                                 <th scope="col">Etatus</th>
                                                 <th scope="col">Acciones</th>
+=======
+                                                <th scope="col">Producto</th>
+                                                <th scope="col">Descripcion</th>
+                                                <th scope="col">Cantidad en Bodega</th>
+                                                <th scope="col">Etatus</th>
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -224,7 +237,10 @@
                                                 ?>
                                                 <tr>
                                                     <th scope="row"><?php echo $fila["idInventario"];?></th>
+<<<<<<< HEAD
                                                     <th scope="row"><?php echo $fila["codigoIn"];?></th>
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
                                                     <td><?php echo $fila["nombreProducto"];?></td>
                                                     <td><?php echo $fila["descripcion"];?></td>
                                                     <td><?php echo $fila["cantidadProducto"];?></td>
@@ -241,10 +257,13 @@
                                                             
                                                         ?>                        
                                                     </td>
+<<<<<<< HEAD
                                                     <td>
                                                         <span class="badge bg-warning"><i class="bi bi-pencil-square"></i> </span>
                                                         <span class="badge bg-danger" onclick="example()" style="cursor:pointer;"><i class="bi bi-trash-fill"></i> </span>
                                                     </td>
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
                                                 </tr>
                                                 <?php
                                                 }
@@ -273,6 +292,7 @@
 
     </main><!-- End #main -->
 
+<<<<<<< HEAD
     <script>
         function example()
         {
@@ -281,6 +301,8 @@
         }
     </script>
 
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">

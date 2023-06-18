@@ -183,10 +183,14 @@
                                         <div class="col-md-6">
                                             <input type="text" class="form-control" placeholder="Descripcion" name="descripcion">
                                         </div>
+<<<<<<< HEAD
                                         <div class="col-md-4">
                                             <input type="text" class="form-control" placeholder="Codigo" name="descripcion">
                                         </div>
                                         <div class="col-md-2">
+=======
+                                        <div class="col-md-6">
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
                                             <input type="number" class="form-control" placeholder="Existencias" name="existencia">
                                         </div>
                                         <div class="text-center">

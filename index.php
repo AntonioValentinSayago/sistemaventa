@@ -137,6 +137,7 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
+<<<<<<< HEAD
         <a class="nav-link collapsed" href="clientes.php">
         <i class="bi bi-person-add"></i>
           <span>Empleados</span>
@@ -144,6 +145,8 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
         <a class="nav-link collapsed" href="pages-faq.html">
           <i class="bi bi-question-circle"></i>
           <span>Manual de Usuario</span>

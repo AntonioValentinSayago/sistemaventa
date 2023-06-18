@@ -123,7 +123,12 @@
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
+<<<<<<< HEAD
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="gastosGenerales.php">
+=======
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse"
+          href="gastosGenerales.php">
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
           <i class="bi bi-bar-chart"></i><span>Gastos Generales</span>
         </a>
       </li><!-- End Charts Nav -->
@@ -137,6 +142,7 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
+<<<<<<< HEAD
         <a class="nav-link collapsed" href="clientes.php">
           <i class="bi bi-person-add"></i>
           <span>Empleados</span>
@@ -144,6 +150,8 @@
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
+=======
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
         <a class="nav-link collapsed" href="pages-faq.html">
           <i class="bi bi-question-circle"></i>
           <span>Manual de Usuario</span>
@@ -157,7 +165,11 @@
   <main id="main" class="main">
 
     <div class="pagetitle" style="display: block;">
+<<<<<<< HEAD
       <h1>Cartera de Clientes</h1>
+=======
+      <h1>Control de Clientes</h1>
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
@@ -169,6 +181,27 @@
     <!--Inicio del Section Principal-->
     <section class="section dashboard">
       <div class="row">
+<<<<<<< HEAD
+=======
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+            <!--Buscador de Clientes-->
+            <div class="card recent-sales overflow-auto">
+              <div class="card-body">
+                <h5 class="card-title">Buscar Cliente</h5>
+                <form>
+                  <input type="text" id="search-input" placeholder="Nombre Cliente" class="form-control">
+                  <ul id="search-results"></ul>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+        </div><!-- End Left side columns -->
+
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
 
         <div class="col-xl-12">
 
@@ -179,6 +212,7 @@
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
 
+<<<<<<< HEAD
                   <!-- Active Table -->
                   <table class="table table-borderless datatable">
                     <thead>
@@ -225,6 +259,55 @@
                     </tbody>
                   </table>
                   <!-- End Active Table -->
+=======
+                  <h5 class="card-title">Datos Personales</h5>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Juan Felipe</div>
+                    <div class="col-lg-9 col-md-8">Web Designer</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Telfono:</div>
+                    <div class="col-lg-9 col-md-8">558741258</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Dirección</div>
+                    <div class="col-lg-9 col-md-8">A108 Adam Street, New York, NY 535022</div>
+                  </div>
+<br>
+                                <!-- Active Table -->
+              <table class="table table-borderless datatable">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Folio de Nota</th>
+                    <th scope="col">Estatus</th>
+                    <th scope="col">Start Date</th>
+                    <th>Total $</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>8484848</td>
+                    <td><span class="badge bg-warning">En proceso</span></td>
+                    <td>2016-05-25</td>
+                    <td>28</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Ashleigh Langosh</td>
+                    <td><span class="badge bg-success">Entregado</span></td>
+                    <td class="table-active">2012-06-11</td>
+                    <td>45</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <!-- End Active Table -->
+>>>>>>> c188165b76a6005bd88b6287e40f33b903b8fad1
                 </div>
 
               </div><!-- End Bordered Tabs -->
